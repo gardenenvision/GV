@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - GARDEN EN VISIÓN</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #F0F4F8; /* Color de fondo claro */
+                        font-family: 'Arial', sans-serif; /* Fuente general */
+        }
+        .header {
+            background-color: #556b2F; /* Color oscuro para la cabecera */
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #FFFFFF; /* Color del texto en la cabecera */
+        }
+        .slogan {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #9DA661; /* Color brillante para los slogans */
+            margin: 10px 0;
+        }
+        .content {
+            padding: 40px 15px;
+        }
+        .footer {
+            background-color: #556b2F; /* Color oscuro para el pie de página */
+            padding: 10px;
+            color: #FFFFFF; /* Color del texto en el pie de página */
+        }
+        .section-title {
+            margin-bottom: 20px;
+            color: #9DA661; /* Color brillante para los títulos de sección */
+            text-align: center; /* Centrar el título */
+        }
+        .logo {
+            max-width: 195px; /* Aumenta el tamaño máximo del logo en un 30% */
+            margin-bottom: 20px; /* Espacio inferior para separación */
+        }
+        .product-card {
+            margin-bottom: 20px;
+            transition: transform 0.2s;
+            cursor: pointer; /* Cambia el cursor al pasar sobre la tarjeta */
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+        .product-image {
+            display: none; /* Oculta las imágenes inicialmente */
+            margin-top: 10px;
+            max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+        }
+    </style>
+</head>
+<body>
+
+<header class="header">
+     <a href="index.html">
+        <img src="Imagenes/logo.png" alt="Logo" class="logo"> <!-- Enlace al logo que lleva al index -->
+    </a>
+    <h1>GARDEN EN VISIÓN</h1>
+    <div class="slogan">Jardinería sostenible y decoración para tu hogar</div>
+    <div class="slogan">Producimos y establecemos calidad</div>
+    <nav class="nav justify-content-center">
+        <a class="nav-link text-white" href="index.html">Inicio</a>
+        <a class="nav-link text-white" href="servicios.html">Servicios</a>
+        <a class="nav-link text-white" href="mision.html">Misión</a>
+        <a class="nav-link text-white" href="vision.html">Visión</a>
+        <a class="nav-link text-white" href="valores.html">Valores</a>
+        <a class="nav-link text-white" href="productos.html">Productos</a>
+        <a class="nav-link text-white" href="viveros.html">Viveros</a>
+    </nav>
+</header>
+
+<div class="container content">
+    <section>
+        <h2 class="section-title">Productos</h2>
+        <p class="text-center">Producción de especies en sistema tradicional y en contenedor:</p>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card product-card" onmouseover="showImage('huizache')" onmouseout="hideImage('huizache')">
+                    <div class="card-body">
+                        <h5 class="card-title">Huizache</h5>
+                        <p class="card-text">Planta resistente y adaptada a climas áridos.</p>
+                    </div>
+                    <img src="Imagenes/Huizache.jpg" alt="Huizache" class="product-image huizache">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card product-card" onmouseover="showImage('pinonero')" onmouseout="hideImage('pinonero')">
+                    <div class="card-body">
+                        <h5 class="card-title">Piñonero</h5>
+                        <p class="card-text">Árbol de gran valor ecológico y paisajístico.</p>
+                    </div>
+                    <img src="Imagenes/Piñonero.jpg" alt="Piñonero" class="product-image pinonero">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card product-card" onmouseover="showImage('pino-lacio')" onmouseout="hideImage('pino-lacio')">
+                    <div class="card-body">
+                        <h5 class="card-title">Pino Lacio</h5>
+                        <p class="card-text">Ideal para reforestación y recuperación de suelos.</p>
+                    </div>
+                    <img src="Imagenes/Pinolacio.jpg" alt="Pino Lacio" class="product-image pino-lacio">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card product-card" onmouseover="showImage('palo-prieto')" onmouseout="hideImage('palo-prieto')">
+                    <div class="card-body">
+                        <h5 class="card-title">Palo Prieto</h5>
+                        <p class="card-text">Planta nativa, resistente a la sequía.</p>
+                    </div>
+                    <img src="Imagenes/Paloprieto.jpg" alt="Palo Prieto" class="product-image palo-prieto">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card product-card" onmouseover="showImage('palo-dulce')" onmouseout="hideImage('palo-dulce')">
+                    <div class="card-body">
+                        <h5 class="card-title">Palo Dulce</h5>
+                        <p class="card-text">Valor medicinal y ornamental.</p>
+                    </div>
+                    <img src="Imagenes/Palodulce.jpg" alt="Palo Dulce" class="product-image palo-dulce">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card product-card" onmouseover="showImage('mezquite')" onmouseout="hideImage('mezquite')">
+                    <div class="card-body">
+                        <h5 class="card-title">Mezquite</h5>
+                        <p class="card-text">Árbol que proporciona sombra y forraje.</p>
+                    </div>
+                    <img src="Imagenes/Mezquite.jpg" alt="Mezquite" class="product-image mezquite">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card product-card" onmouseover="showImage('encino-roble')" onmouseout="hideImage('encino-roble')">
+                    <div class="card-body">
+                        <h5 class="card-title">Encino Roble</h5>
+                        <p class="card-text">Árbol de gran tamaño, ideal para bosques.</p>
+                    </div>
+                    <img src="Imagenes/EncinoRoble.jpeg" alt="Encino Roble" class="product-image encino-roble">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card product-card" onmouseover="showImage('palma-pita')" onmouseout="hideImage('palma-pita')">
+                    <div class="card-body">
+                        <h5 class="card-title">Palma Pita</h5>
+                        <p class="card-text">Utilizada para la elaboración de artesanías.</p>
+                    </div>
+                    <img src="Imagenes/PalmaPita.jpg" alt="Palma Pita" class="product-image palma-pita">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card product-card" onmouseover="showImage('huaje')" onmouseout="hideImage('huaje')">
+                    <div class="card-body">
+                        <h5 class="card-title">Huaje</h5>
+                        <p class="card-text">Planta leguminosa que mejora el suelo.</p>
+                    </div>
+                    <img src="Imagenes/huaje.jpg" alt="Huaje" class="product-image huaje">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card product-card" onmouseover="showImage('cactaceas')" onmouseout="hideImage('cactaceas')">
+                    <div class="card-body">
+                        <h5 class="card-title">Cactáceas</h5>
+                        <p class="card-text">Variedad de cactus adaptados al desierto.</p>
+                    </div>
+                    <img src="Imagenes/cactaceas.jpg" alt="Cactáceas" class="product-image cactaceas">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card product-card" onmouseover="showImage('suculentas')" onmouseout="hideImage('suculentas')">
+                    <div class="card-body">
+                        <h5 class="card-title">Suculentas</h5>
+                        <p class="card-text">Plantas ideales para decoración y fácil cuidado.</p>
+                    </div>
+                    <img src="Imagenes/Suculentas.jpg" alt="Suculentas" class="product-image suculentas">
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<div class="back-button text-center">
+    <a href="index.html" class="btn btn-primary">Regresar al Inicio</a>
+</div>
+
+<footer class="footer text-center">
+    <p>&copy; 2024 GARDEN EN VISIÓN. Todos los derechos reservados.</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    function showImage(product) {
+        const selectedImage = document.querySelector(`.${product}`);
+        if (selectedImage) {
+            selectedImage.style.display = 'block';
+        }
+    }
+
+    function hideImage(product) {
+        const selectedImage = document.querySelector(`.${product}`);
+        if (selectedImage) {
+            selectedImage.style.display = 'none';
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misión - GARDEN EN VISIÓN</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #F0F4F8; /* Color de fondo claro */
+                        font-family: 'Arial', sans-serif; /* Fuente general */
+
+        }
+        .header {
+            background-color: #556b2F; /* Color oscuro para la cabecera */
+            padding: 20px;
+            text-align: center; /* Centrar texto */
+            margin-bottom: 30px;
+            color: #FFFFFF; /* Color del texto en la cabecera */
+        }
+        .slogan {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #9DA661; /* Color brillante para los slogans */
+            margin: 10px 0;
+        }
+        .content {
+            padding: 40px 15px;
+        }
+        .footer {
+            background-color: #556b2F; /* Color oscuro para el pie de página */
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            color: #FFFFFF; /* Color del texto en el pie de página */
+        }
+        .section-title {
+            margin-bottom: 20px;
+            color: #9DA661; /* Color brillante para los títulos de sección */
+            font-size: 2em; /* Aumenta el tamaño del título */
+            font-weight: bold; /* Hace el título más destacado */
+            text-align: center; /* Centra el título */
+        }
+        .mission-text {
+            font-size: 1.1em; /* Tamaño de fuente ligeramente más grande */
+            color: #333; /* Color del texto más oscuro */
+            line-height: 1.8; /* Espaciado entre líneas */
+            text-align: justify; /* Justifica el texto */
+            background-color: #FFFFFF; /* Fondo blanco para el texto */
+            padding: 20px; /* Espaciado interno */
+            border-radius: 8px; /* Bordes redondeados */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+            margin-top: 20px; /* Espaciado superior */
+            transition: background-color 0.3s; /* Transición suave */
+        }
+        .mission-text:hover {
+            background-color: #E8F5E9; /* Fondo suave al pasar el mouse */
+        }
+        .logo {
+            max-width: 195px; /* Aumenta el tamaño máximo del logo en un 30% */
+            margin-bottom: 20px; /* Espacio inferior para separación */
+        }
+        .back-button {
+            margin-top: 20px;
+        }
+        .carousel {
+            max-width: 50%; /* Aumentar el tamaño del carrusel al 78% */
+            margin: auto; /* Centra el carrusel */
+        }
+        .carousel-item img {
+            width: 100%; 
+            height: auto;
+        }
+        @media (min-width: 710px) {
+            .carousel {
+                max-width: 100%; /* Ocupa el 100% en pantallas más grandes */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <a href="index.html">
+        <img src="Imagenes/logo.png" alt="Logo" class="logo"> <!-- Enlace al logo que lleva al index -->
+    </a>
+    <h1>GARDEN EN VISIÓN</h1>
+    <div class="slogan">Jardinería sostenible y decoración para tu hogar</div>
+    <div class="slogan">Producimos y establecemos calidad</div>
+    <nav class="nav justify-content-center">
+        <a class="nav-link text-white" href="index.html">Inicio</a>
+        <a class="nav-link text-white" href="servicios.html">Servicios</a>
+        <a class="nav-link text-white" href="mision.html">Misión</a>
+        <a class="nav-link text-white" href="vision.html">Visión</a>
+        <a class="nav-link text-white" href="valores.html">Valores</a>
+        <a class="nav-link text-white" href="productos.html">Productos</a>
+        <a class="nav-link text-white" href="viveros.html">Viveros</a>
+    </nav>
+</header>
+
+<div class="container content">
+    <div class="row">
+        <div class="col-md-6">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="Imagenes/Jardin.jpeg" class="d-block w-100" alt="Imagen 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Imagenes/mision1.jpeg" class="d-block w-100" alt="Imagen 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Imagenes/mision2.jpeg" class="d-block w-100" alt="Imagen 3">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Siguiente</span>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <section>
+                <h2 class="section-title">Misión</h2>
+                <p class="mission-text">En Garden en Visión, nos comprometemos a transformar espacios verdes a través de soluciones de jardinería sostenible y decoración viva, creando entornos naturales que promueven el bienestar y la armonía. Con un enfoque en la ecología y la personalización, contribuimos a un futuro más verde y responsable.</p>
+            </section>
+        </div>
+    </div>
+    
+    <div class="back-button text-center">
+        <a href="index.html" class="btn btn-primary">Regresar al Inicio</a>
+    </div>
+</div>
+
+<footer class="footer text-center">
+    <p>&copy; 2024 GARDEN EN VISIÓN. Todos los derechos reservados.</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

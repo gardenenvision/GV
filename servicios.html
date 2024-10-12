@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - GARDEN EN VISIÓN</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+            body {
+            background-color: #F0F4F8; /* Color de fondo claro */
+                        font-family: 'Arial', sans-serif; /* Fuente general */
+        }
+        .header {
+            background-color: #556b2F; /* Color oscuro para la cabecera */
+            padding: 20px;
+            text-align: center; /* Centrar texto */
+            margin-bottom: 30px;
+            color: #FFFFFF; /* Color del texto en la cabecera */
+        }
+        .slogan {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #9DA661; /* Color brillante para los slogans */
+            margin: 10px 0;
+        }
+        .content {
+            padding: 40px 15px;
+        }
+        .footer {
+            background-color: #556b2F; /* Color oscuro para el pie de página */
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            color: #FFFFFF; /* Color del texto en el pie de página */
+        }
+        .section-title {
+            margin-bottom: 20px;
+            color: #9DA661; /* Color brillante para los títulos de sección */
+        }
+        .service-card {
+            background-color: #6A6E3D; /* Color de las tarjetas de servicio */
+            border-radius: 8px;
+            padding: 20px;
+            margin: 15px 0;
+            transition: transform 0.2s;
+            color: #FFFFFF; /* Color del texto en las tarjetas */
+            text-align: center; /* Centrar texto dentro de la tarjeta */
+        }
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+        .carousel {
+            max-width: 65%; /* Ajusta el tamaño del carrusel al 50% */
+            margin: auto; /* Centra el carrusel */
+        }
+        .carousel-item img {
+            width: 100%; 
+            height: auto;
+        }
+        .connect-section {
+            background-color: #0A3D62; /* Color para la sección de conexión */
+            padding: 20px;
+            border-radius: 5px;
+            color: #FFFFFF; /* Color del texto en la sección de conexión */
+            text-align: center;
+        }
+        .logo {
+            max-width: 195px; /* Aumenta el tamaño máximo del logo en un 30% */
+            margin-bottom: 20px; /* Espacio inferior para separación */
+        }
+        .circle-navigation {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .circle {
+            display: inline-block;
+            width: 160px; /* Tamaño aumentado (4 veces más grande) */
+            height: 160px; /* Tamaño aumentado (4 veces más grande) */
+            border-radius: 50%;
+            background-color: #9DA661; /* Color de los círculos */
+            margin: 2px; /* Espaciado ajustado para juntar más los círculos */
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.2s;
+            text-decoration: none; /* Quitar subrayado en el texto */
+            color: white; /* Color del texto en los enlaces */
+        }
+        .circle:hover {
+            transform: scale(1.05); /* Efecto al pasar el ratón */
+        }
+        .circle img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            transition: filter 0.2s;
+        }
+        .circle.selected img {
+            filter: blur(5px); /* Difuminado al seleccionar */
+        }
+        .circle-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: blue; /* Color azul para el texto */
+            font-weight: bold;
+            text-align: center;
+            z-index: 1; /* Asegura que el texto esté encima */
+        }
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <a href="index.html">
+        <img src="Imagenes/logo.png" alt="Logo" class="logo"> <!-- Enlace al logo que lleva al index -->
+    </a>
+    <h1>GARDEN EN VISIÓN</h1>
+    <div class="slogan">Jardinería sostenible y decoración para tu hogar</div>
+    <div class="slogan">Producimos y establecemos calidad</div>
+    <nav class="nav justify-content-center"> <!-- Alinear nav al centro -->
+        <a class="nav-link text-white" href="index.html">Inicio</a>
+        <a class="nav-link text-white" href="servicios.html">Servicios</a>
+        <a class="nav-link text-white" href="mision.html">Misión</a>
+        <a class="nav-link text-white" href="vision.html">Visión</a>
+        <a class="nav-link text-white" href="valores.html">Valores</a>
+        <a class="nav-link text-white" href="productos.html">Productos</a>
+        <a class="nav-link text-white" href="viveros.html">Viveros</a>
+    </nav>
+</header>
+
+<div class="container content">
+    <section id="servicios" class="mb-4">
+        <h2 class="section-title">Descripción de Capacidades y Servicios</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="service-card">
+                    <h5>Producción de Plántulas</h5>
+                    <p>Especializados en la producción de plántulas forestales, cactáceas y suculentas, garantizando calidad y trazabilidad.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="service-card">
+                    <h5>Mantenimiento de Jardines</h5>
+                    <p>Ofrecemos servicios de mantenimiento que aseguran la salud y belleza de tus espacios verdes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<footer class="footer text-center">
+    <p>&copy; 2024 GARDEN EN VISIÓN. Todos los derechos reservados.</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
