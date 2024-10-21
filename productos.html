@@ -8,7 +8,7 @@
     <style>
         body {
             background-color: #F0F4F8; /* Color de fondo claro */
-                        font-family: 'Arial', sans-serif; /* Fuente general */
+            font-family: 'Arial', sans-serif; /* Fuente general */
         }
         .header {
             background-color: #556b2F; /* Color oscuro para la cabecera */
@@ -58,7 +58,7 @@
 <body>
 
 <header class="header">
-     <a href="index.html">
+    <a href="index.html">
         <img src="Imagenes/logo.png" alt="Logo" class="logo"> <!-- Enlace al logo que lleva al index -->
     </a>
     <h1>GARDEN EN VISIÓN</h1>
@@ -76,6 +76,45 @@
 </header>
 
 <div class="container content">
+    <section>
+        <h2 class="section-title">Productos en Venta</h2>
+        <p class="text-center">Aquí están nuestros productos disponibles:</p>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card product-card" onmouseover="showImage('limon-persas')" onmouseout="hideImage('limon-persas')">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Limón Persa</h5>
+                    </div>
+                    <img src="Imagenes/LimonPersa.jpg" alt="Limón Persa" class="product-image limon-persas">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card product-card" onmouseover="showImage('durazno')" onmouseout="hideImage('durazno')">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Durazno</h5>
+                    </div>
+                    <img src="Imagenes/Durazno.jpg" alt="Durazno" class="product-image durazno">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card product-card" onmouseover="showImage('ciruelo-rojo')" onmouseout="hideImage('ciruelo-rojo')">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Ciruelo Rojo</h5>
+                    </div>
+                    <img src="Imagenes/CirueloRojo.jpg" alt="Ciruelo Rojo" class="product-image ciruelo-rojo">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card product-card" onmouseover="showImage('ciruelo-blanco')" onmouseout="hideImage('ciruelo-blanco')">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Ciruelo Blanco</h5>
+                    </div>
+                    <img src="Imagenes/CirueloBlanco.jpg" alt="Ciruelo Blanco" class="product-image ciruelo-blanco">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section>
         <h2 class="section-title">Productos</h2>
         <p class="text-center">Producción de especies en sistema tradicional y en contenedor:</p>
@@ -182,6 +221,7 @@
         </div>
     </section>
 </div>
+
 <div class="back-button text-center">
     <a href="index.html" class="btn btn-primary">Regresar al Inicio</a>
 </div>
